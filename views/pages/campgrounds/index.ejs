@@ -1,0 +1,43 @@
+<%- include("../../partials/header")%>
+
+<div class="container">
+    <header class = "jumbotron">
+        <div class="container">
+            <div class="container"></div>
+            <h1 style="padding-bottom: 1em;">RESTful Playground</h1>
+            <p>
+                This website is a demonstration of RESTful routes with error messages. It is a minimal viable produt and ment to demonstrate ability with CRUD, error handling, and flash messages.
+                It has been populated with fake data. Feel free to create a new user under Sign Up and play around.
+
+            </p>
+            <a class="btn btn-primary btn-lg" href="/index/new">Add a New Campground</a>
+        </div>
+
+    </header>
+    
+    <div class="container">
+        <div class="row justify-content-between">
+
+            <% campgrounds.forEach(site => {%>
+                
+                    <div class="card" style="width: 18rem; margin-bottom: 2em;">
+                        <img class="card-image" src="<%=site.image%>" alt="" srcset="">
+                        <div class="card-body">
+                            <h4><%=site.name%></h4>
+                        </div>
+                        <p style="margin-left:1rem;">
+                            <a href="/index/<%= site._id %>" class="btn btn-primary">More Info</a>
+                        </p>
+                    </div>
+    
+            <%}); %>    
+    
+        </div>
+    
+    </div>
+    
+    </div>
+
+
+
+<%- include("../../partials/footer")%>

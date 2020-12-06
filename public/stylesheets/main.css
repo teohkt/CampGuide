@@ -1,0 +1,53 @@
+.navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#spaceTop h1{
+    padding-top: 5rem;
+}
+
+.thumbnail {
+    padding: 0px;
+}
+
+.thumbnail img {
+    width:100%
+}
+
+.card-image {
+    
+    height: 12rem;
+    object-fit: cover;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+}
+
+.img-responsive {
+    margin-bottom: 9px;
+}
+/* 
+#imgDesc {
+    margin: 5px;
+} */
+
+.modBut {
+    display: flex;
+}
+
+.deleteButton {
+    padding-left: 9px;
+}
+
+.well {
+    padding: 9px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+}
